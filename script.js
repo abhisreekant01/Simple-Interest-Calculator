@@ -7,11 +7,10 @@ function compute()
      var int = principal * years * rate/100;
     
                 if (principal <= 0) {
-                    alert("Please enter positive value")
-                    window.onsubmit = function() {
+                    alert("Please enter positive value");
                     document.getElementById("principal").focus();
-                    };
                     }
+                    
                     else{    
                     interest =document.getElementById("result"); 
                interest.innerHTML = "If you deposit " + (principal) + "," + ("<br>") + "at an interest rate of " + (rate) + "%." + ("<br>") + "You will receive an amount of " + (int) + "," +("<br>") + "in the year " + (future);
